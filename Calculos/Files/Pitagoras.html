@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Pitagoras</title>
+    <script src="Magick.js"></script>
+    <link rel="stylesheet" href="Style.css">
+  </head>
+  <body>
+      <table id="loc">
+        <tr>
+           <td>
+             <form novalidate onsubmit="PitagorasH();return false" action="Pitagoras.html" method="get">
+                <table id="padrão">
+                   <h5>Descobrir o valor da hipotenusa</h5>
+                   <tr>
+                      <td><input type="number" id="varA" placeholder="Valor do 1° quarteto"></td>
+                   </tr>
+                   <tr>
+                      <td><input type="number" id="varB" placeholder="Valor de 2° quarteto"></td>
+                   </tr>
+                   <tr>
+                      <td><button type="submit" name="button">Calcular</button></td>
+                   </tr>
+                   <tr>
+                      <td><p id="answer">Resultado</p></td>
+                   </tr>
+                </table>
+             </form>
+           </td>
+           <td>
+           <pre>   </pre>
+         </td>
+           <td>
+             <form novalidate onsubmit="PitagorasQ();return false" action="Pitagoras.html" method="get">
+                <table id="padrão">
+                   <h5>Descobrir o valor dos quartetos</h5>
+                   <tr>
+                      <td><input type="number" id="varA2" placeholder="Valor da hipotenusa"></td>
+                   </tr>
+                   <tr>
+                      <td><input type="number" id="varB2" placeholder="Valor do quarteto"></td>
+                   </tr>
+                   <tr>
+                      <td><button type="submit" name="button">Calcular</button></td>
+                   </tr>
+                   <tr>
+                      <td><p id="answer2">Resultado</p></td>
+                   </tr>
+                </table>
+             </form>
+           </td>
+  </body>
+</html>
