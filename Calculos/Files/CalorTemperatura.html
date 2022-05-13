@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CalorTemperatura</title>
+    <script type="text/javascript" src="Magick.js"></script>
+    <link rel="stylesheet" href="Style.css">
+  </head>
+  <body>
+    <table id="loc">
+      <tr>
+        <td>
+          <table id="padrão">
+             <h5>Calor Especifico</h5>
+             <form novalidate onsubmit="Calorespecifico();return false" action="CalorTemperatura.html" method="get">
+                <tr>
+                   <td><input type="number" id="varA" placeholder="Calorias recebidas"></td>
+                </tr>
+                <tr>
+                   <td><input type="number" id="varB" placeholder="Massa do objeto (Gramas)"></td>
+                </tr>
+                <tr>
+                   <td><input type="number" id="varC" placeholder="Variação de temperatura"></td>
+                </tr>
+                <tr>
+                   <td><button type="submit" name="button">Calcular</button></td>
+                </tr>
+                <tr>
+                   <td><p id="answer">Resultado</p></td>
+                </tr>
+             </form>
+          </table>
+        </td>
+        <td><div class="space">
+        </div></td>
+        <td>
+          <table id="padrão">
+            <h5>Variação de temperatura</h5>
+            <form novalidate onsubmit="Variaçãotemperatura(); return false" action="CalorTemperatura.html" method="get">
+              <tr>
+                <td><input type="number" id="varA2" placeholder="Calor para subir 1°C"></td>
+              </tr>
+              <tr>
+                <td><input type="number" id="varB2" placeholder="Massa do objeto (Gramas)"></td>
+              </tr>
+              <tr>
+                <td><input type="number" id="varC2" placeholder="Calorias adicionadas"></td>
+              </tr>
+              <tr>
+                <td><button type="submit" name="button">Calcular</button></td>
+              </tr>
+              <tr>
+                <td><p id="answer2">Resultado</p></td>
+              </tr>
+
+            </form>
+          </table>
+
+        </td>
+        <td><div class="space"></div></td>
+        <td>
+          <table id="padrão">
+            <h5>Variação de calor</h5>
+            <form novalidate onsubmit="Variaçãocalor(); return false" action="CalorTemperatura.html" method="get">
+              <tr>
+                <td><input type="number" id="varA3" placeholder="Calor para subir 1°C"></td>
+              </tr>
+              <tr>
+                <td><input type="number" id="varB3" placeholder="Massa do objeto (Gramas)"></td>
+              </tr>
+              <tr>
+                <td><input type="number" id="varC3" placeholder="Variação de temperatura"></td>
+              </tr>
+              <tr>
+                <td><button type="submit" name="button">Calcular</button></td>
+              </tr>
+              <tr>
+                <td><p id="answer3">Resultado</p></td>
+              </tr>
+
+            </form>
+          </table>
+
+        </td>
+  </body>
+</html>
